@@ -1,11 +1,9 @@
 var express = require('express');
-var times=0;
 var router = express.Router();
 
-/* GET users listing. */
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  times+=1;
-  res.send('user accesses are: '+times);
+  res.render('mydata', { title: 'Naveen kumar' });
 });
 
 module.exports = router;
